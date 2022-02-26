@@ -8,9 +8,9 @@ RSpec.describe "Food Index" do
     click_button "Search"
 
     expect(current_path).to eq('/foods')
-    # expect(page).to have_content("total of the number of items returned by the search: 30,000") I forgot this one
+    expect(page).to have_content("total of the number of items returned by the search: 48008")
     expect(page).to have_content("number of items: 10")
-
+    save_and_open_page
     within(first('.foods')) do
       expect(page).to have_css(".gtinupc")
       expect(page).to have_css(".description")

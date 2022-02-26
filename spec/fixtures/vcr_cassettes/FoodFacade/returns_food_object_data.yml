@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.5.1
+      - Faraday v2.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Wed, 23 Feb 2022 17:39:13 GMT
+      - Sat, 26 Feb 2022 19:20:27 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -709,5 +709,5 @@ http_interactions:
         attributes","id":999,"foodAttributes":[{"value":"6430","name":"WWEIA Category
         number","id":990794},{"value":"Fried vegetables","name":"WWEIA Category description","id":998985}]}],"foodVersionIds":[]}],"aggregations":{"dataType":{"Branded":46770,"Survey
         (FNDDS)":635,"SR Legacy":601,"Foundation":2},"nutrients":{}}}'
-  recorded_at: Wed, 23 Feb 2022 17:39:13 GMT
+  recorded_at: Sat, 26 Feb 2022 19:20:27 GMT
 recorded_with: VCR 6.0.0

@@ -7,5 +7,11 @@ RSpec.describe FoodService do
       foods = FoodService.find_foods_by_name(item)
       expect(foods).to have_key(:foods)
     end
+
+    it "returns total hits for food", :vcr do
+      item = "sweet potato"
+      foods = FoodService.find_total_hits(item)
+      expect(foods[:totalHits]).to eq(48008)
+    end
   end
 end

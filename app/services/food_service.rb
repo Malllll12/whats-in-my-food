@@ -7,4 +7,12 @@ class FoodService
     end
     parse = JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.find_total_hits(item)
+    response = Faraday.get("https://api.nal.usda.gov/fdc/v1/foods/search?") do |faraday|
+      faraday.params[:query] = "#{item}"      
+      faraday.params[:api_key] = "#{ENV['food_api_key']}"
+    end
+    parse = JSON.parse(response.body, symbolize_names: true)
+  end
 end

@@ -11,7 +11,8 @@ RSpec.describe FoodFacade do
     expect(food.gtinupc).to be_a(String)
   end
 
-  it 'returns total hits' do
-    
+  it 'returns total hits',:vcr do
+    foods = FoodFacade.total_hits("sweet potato")
+    expect(foods).to eq(48008)
   end
 end
